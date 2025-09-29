@@ -1,27 +1,18 @@
 ---
-title: POSNA Calculator
-emoji: 🧮
-colorFrom: blue
-colorTo: green
+title: "🍺 POSNA BAC Calculator"
+emoji: "🍻"
+colorFrom: "blue"
+colorTo: "green"
 sdk: gradio
-sdk_version: "4.44.0"
-app_file: main.py
+sdk_version: "4.42.0"
+app_file: app.py
 pinned: false
+license: mit
 ---
 
+# 🍺 POSNA BAC Calculator with Risk Dashboard
 
-# 🍺 POSNA BAC Calculator with Full Risk Dashboard
+This app estimates Blood Alcohol Content (BAC) and shows a risk dashboard visualization.  
+Built with **Gradio**, **Matplotlib**, and **NumPy**.
 
-A Gradio-based Blood Alcohol Content (BAC) calculator that visualizes risk levels over time.  
-Built with Python, Gradio, Matplotlib, and NumPy.  
-
-## Features
-- Estimate current and peak BAC
-- Visualize BAC decline over time
-- Highlight legal limits and high-risk levels
-- Configurable inputs (drinks, alcohol %, weight, sex, metabolism rate)
-
-## Run locally
-```bash
-pip install -r requirements.txt
-python app.py
+➡️ Try adjusting the sliders and see your BAC curve update in real-time.
