@@ -1,13 +1,14 @@
 ---
-title: POSNA BAC Calculator
-emoji: 🍺
+title: POSNA Calculator
+emoji: 🧮
 colorFrom: blue
-colorTo: red
+colorTo: green
 sdk: gradio
-sdk_version: "3.40"
-app_file: app.py
+sdk_version: "4.44.0"
+app_file: main.py
 pinned: false
 ---
+
 
 # 🍺 POSNA BAC Calculator with Full Risk Dashboard
 
