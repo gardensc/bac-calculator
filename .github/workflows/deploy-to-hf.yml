@@ -1,0 +1,26 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches:
+      - main  # run when you push to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add hf https://huggingface.co/spaces/GardenSC/bac-calculator
+          git push --force hf main
