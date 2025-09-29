@@ -3,7 +3,7 @@ name: Deploy to Hugging Face Space
 on:
   push:
     branches:
-      - main  # run when you push to main
+      - main
 
 jobs:
   deploy:
@@ -22,5 +22,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add hf https://huggingface.co/spaces/GardenSC/bac-calculator
+          git remote add hf https://user:$HF_TOKEN@huggingface.co/spaces/GardenSC/bac-calculator
           git push --force hf main
